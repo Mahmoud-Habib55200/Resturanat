@@ -1,0 +1,27 @@
+.app__header {
+  background-color: var(--color-black);
+}
+
+.app__header__h1 {
+  font-family: var(--font-base);
+  color: var(--color-golden);
+  letter-spacing: 0.1em;
+  line-height: 117px;
+  font-size: 90px;
+}
+
+.app__wrapper_info p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #aaaaaa;
+  margin-bottom: 20px;
+}
+
+.custom__button:hover {
+ color: #fff;
+ transition: 0.5s ease;
+background: #867431;
+}

@@ -1,0 +1,160 @@
+.app__navbar {
+  width: 100%;
+  background-color: black;
+  padding: 2rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.app__navbar__image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  width: 300px;
+}
+
+.app__navbar__image img {
+  max-width: 70%;
+}
+
+.app__navbar__links {
+  flex: 1;
+  max-width: 500px;
+}
+.app__navbar__links ul {
+  display: flex;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.app__navbar__links ul li {
+  width: 90%;
+  list-style: none;
+  font-family: sans-serif;
+  transition: 0.5s ease;
+}.app__navbar__links ul li:hover {
+color: #ffffff58;
+}
+
+.app__navbar__sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+}
+
+.app__navbar__sign p {
+  padding: 0px 15px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+.app__navbar__sign p:last-child {
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+
+  color: #ffffff;
+}
+
+.app__navbar__sign div {
+  height: 38px;
+  width: 2px;
+  background-color: rgba(196, 181, 181, 0.32);
+  border-radius: 50%;
+}
+
+/* start responsive function components NavBar*/
+.app__navbar__smallScreen {
+  display: none;
+}
+
+.app__navbar__smallScreen__overlay {
+  background-color: var(--color-black);
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  transition: 1s ease;
+  flex-direction: column;
+}
+.app__navbar__smallScreen__links li {
+  margin-top: 20px;
+  list-style: none;
+  font-family: "Cormorant Upright", serif;
+  font-size: 20px;
+  color: var(--color-golden);
+}
+.app__navbar__smallScreen__links li:hover {
+  color: #fff;
+}
+.app__navbar__smallScreen__overlay .icon__close {
+  font-size: 27px;
+  color: var(--color-golden);
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  cursor: pointer;
+}
+
+.app__navbar__mobilScreen__sign {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px auto;
+  padding: 10px;
+  margin-top: 30px;
+  border: 1px solid #dcca875e;
+  width: 140px;
+  height: 60px;
+  font-size: 14px;
+  font-family: "Cormorant Upright", serif;
+  color: var(--color-golden);
+  border-radius: 5px;
+ 
+}
+
+.app__navbar__mobilScreen__sign p {
+margin-bottom: 10px;
+}
+@media screen and (max-width: 1080px) {
+  .app__navbar__links {
+    display: none;
+  }
+
+  .app__navbar__smallScreen {
+    display: flex;
+  }
+  .app__navbar__mobilScreen__sign {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .app__navbar__sign {
+    display: none;
+  }
+  .app__navbar__image {
+    max-width: 150px;
+  }
+
+  .app__navbar__mobilScreen__sign {
+    display: initial;
+  }
+}
